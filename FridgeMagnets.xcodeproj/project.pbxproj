@@ -13,7 +13,6 @@
 		229FA8201807348700788E00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 229FA81E1807348700788E00 /* InfoPlist.strings */; };
 		229FA8221807348700788E00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FA8211807348700788E00 /* main.m */; };
 		229FA8261807348700788E00 /* CMFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FA8251807348700788E00 /* CMFAppDelegate.m */; };
-		229FA8291807348700788E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FA8271807348700788E00 /* Main.storyboard */; };
 		229FA82C1807348700788E00 /* CMFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FA82B1807348700788E00 /* CMFViewController.m */; };
 		229FA82E1807348700788E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229FA82D1807348700788E00 /* Images.xcassets */; };
 		229FA8351807348700788E00 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229FA8341807348700788E00 /* XCTest.framework */; };
@@ -21,6 +20,7 @@
 		229FA8371807348700788E00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229FA8191807348700788E00 /* UIKit.framework */; };
 		229FA83F1807348700788E00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 229FA83D1807348700788E00 /* InfoPlist.strings */; };
 		229FA8411807348700788E00 /* FridgeMagnetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FA8401807348700788E00 /* FridgeMagnetsTests.m */; };
+		229FA84D180735BB00788E00 /* CMFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229FA84C180735BB00788E00 /* CMFViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		229FA8231807348700788E00 /* FridgeMagnets-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FridgeMagnets-Prefix.pch"; sourceTree = "<group>"; };
 		229FA8241807348700788E00 /* CMFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMFAppDelegate.h; sourceTree = "<group>"; };
 		229FA8251807348700788E00 /* CMFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMFAppDelegate.m; sourceTree = "<group>"; };
-		229FA8281807348700788E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229FA82A1807348700788E00 /* CMFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMFViewController.h; sourceTree = "<group>"; };
 		229FA82B1807348700788E00 /* CMFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMFViewController.m; sourceTree = "<group>"; };
 		229FA82D1807348700788E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		229FA83C1807348700788E00 /* FridgeMagnetsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FridgeMagnetsTests-Info.plist"; sourceTree = "<group>"; };
 		229FA83E1807348700788E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		229FA8401807348700788E00 /* FridgeMagnetsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FridgeMagnetsTests.m; sourceTree = "<group>"; };
+		229FA84C180735BB00788E00 /* CMFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMFViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +112,8 @@
 		229FA81B1807348700788E00 /* FridgeMagnets */ = {
 			isa = PBXGroup;
 			children = (
-				229FA8241807348700788E00 /* CMFAppDelegate.h */,
-				229FA8251807348700788E00 /* CMFAppDelegate.m */,
-				229FA8271807348700788E00 /* Main.storyboard */,
-				229FA82A1807348700788E00 /* CMFViewController.h */,
-				229FA82B1807348700788E00 /* CMFViewController.m */,
+				229FA84A180734F800788E00 /* App delegate */,
+				229FA84B1807350100788E00 /* View controller */,
 				229FA82D1807348700788E00 /* Images.xcassets */,
 				229FA81C1807348700788E00 /* Supporting Files */,
 			);
@@ -150,6 +147,25 @@
 				229FA83D1807348700788E00 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		229FA84A180734F800788E00 /* App delegate */ = {
+			isa = PBXGroup;
+			children = (
+				229FA8241807348700788E00 /* CMFAppDelegate.h */,
+				229FA8251807348700788E00 /* CMFAppDelegate.m */,
+			);
+			name = "App delegate";
+			sourceTree = "<group>";
+		};
+		229FA84B1807350100788E00 /* View controller */ = {
+			isa = PBXGroup;
+			children = (
+				229FA82A1807348700788E00 /* CMFViewController.h */,
+				229FA82B1807348700788E00 /* CMFViewController.m */,
+				229FA84C180735BB00788E00 /* CMFViewController.xib */,
+			);
+			name = "View controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				229FA82E1807348700788E00 /* Images.xcassets in Resources */,
+				229FA84D180735BB00788E00 /* CMFViewController.xib in Resources */,
 				229FA8201807348700788E00 /* InfoPlist.strings in Resources */,
-				229FA8291807348700788E00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +297,6 @@
 				229FA81F1807348700788E00 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		229FA8271807348700788E00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				229FA8281807348700788E00 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		229FA83D1807348700788E00 /* InfoPlist.strings */ = {

@@ -9,7 +9,7 @@
 #import "CMFViewController.h"
 
 @interface CMFViewController ()
-
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @end
 
 @implementation CMFViewController
